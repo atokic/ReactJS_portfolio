@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from '../layouts/Title'
-import { testimonialOne,testimonialTwo, testimonialThree, testimonialFour, testimonialFive, testimonialSix, quote } from "../../assets";
+import { testimonial1,testimonial2, testimonial3, testimonial4, testimonial5, testimonial6, quote } from "../../assets";
 
 
 function SampleNextArrow(props) {
@@ -103,7 +103,7 @@ const Testimonial = () => {
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                 <img
                   className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialTwo}
+                  src={testimonial2}
                   alt="testimonialTwo"
                 />
                 <div className="w-full flex flex-col justify-end">
@@ -154,7 +154,7 @@ const Testimonial = () => {
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                 <img
                   className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialOne}
+                  src={testimonial1}
                   alt="testimonialOne"
                 />
                 <div className="w-full flex flex-col justify-end">
@@ -205,7 +205,7 @@ const Testimonial = () => {
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                 <img
                   className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialThree}
+                  src={testimonial3}
                   alt="testimonialThree"
                 />
                 <div className="w-full flex flex-col justify-end">
@@ -256,7 +256,7 @@ const Testimonial = () => {
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                 <img
                   className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialFour}
+                  src={testimonial4}
                   alt="testimonialFour"
                 />
                 <div className="w-full flex flex-col justify-end">
@@ -307,7 +307,7 @@ const Testimonial = () => {
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                 <img
                   className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialFive}
+                  src={testimonial5}
                   alt="testimonialFive"
                 />
                 <div className="w-full flex flex-col justify-end">
@@ -358,7 +358,7 @@ const Testimonial = () => {
               <div className="w-full lgl:w-[35%] h-full bg-gradient-to-r from-[#1e2024] to-[#23272b] p-8 rounded-lg shadow-shadowOne flex flex-col md:flex-row lgl:flex-col gap-8 justify-center md:justify-start lgl:justify-center">
                 <img
                   className="h-72 md:h-32 lgl:h-72 rounded-lg object-cover"
-                  src={testimonialSix}
+                  src={testimonial6}
                   alt="testimonialSix"
                 />
                 <div className="w-full flex flex-col justify-end">

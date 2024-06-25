@@ -17,12 +17,6 @@ const Experience = () => {
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Jr. Software Engineer"
-            subTitle="Company - (03/07/2023 - Present)"
-            result="Split, Croatia"
-            des=""
-          />
-          <ResumeCard
             title="Apprentice web developer"
             subTitle="Human Resources Cloud d.o.o. - (03/2019 - 06/2019)"
             result="Split, Croatia"
@@ -49,9 +43,15 @@ const Experience = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Experience From Companies</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <ResumeCard
+            title="Web developer & designer"
+            subTitle="Chip-Top by Interijeri Tičinović d.o.o.- (12/2023 - Present)"
+            result="Sinj, Croatia"
+            des=""
+          />
           <ResumeCard
             title="Web developer & IT"
-            subTitle="Bazenska tehnika Dicmo - (08/2020 - Present)"
+            subTitle="Bazenska tehnika Dicmo - (08/2020 - 11/2023)"
             result="Dicmo, Croatia"
             des=""
           />
