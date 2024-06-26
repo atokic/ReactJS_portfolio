@@ -36,7 +36,8 @@ import {
   project33,
   project34,
   project35,
-  project36
+  project36,
+  project37
 } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
@@ -210,6 +211,12 @@ const Projects = () => {
           des="Technology: TypeScript, REST, Node js, Express, MongoDB"
           src={project23}
           github_link="https://github.com/atokic/Chuck_Norris_Joke_App"
+        />
+        <ProjectsCard
+          title="Project Tracking Software"
+          des="Technology: MERN"
+          src={project37}
+          github_link="https://github.com/atokic/Project-Tracking-Software/"
         />  
         <ProjectsCard
           title="React Essential"
