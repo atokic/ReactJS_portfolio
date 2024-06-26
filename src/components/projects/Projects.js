@@ -61,7 +61,7 @@ const Projects = () => {
 
         />
         <ProjectsCard
-          title="Car Managment System"
+          title="Car Management System"
           des="Technology: Angular, .NET Core, MySQL"
           src={project2}
           github_link="https://github.com/atokic/Car-Managment-System"
