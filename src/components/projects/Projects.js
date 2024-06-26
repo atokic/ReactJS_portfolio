@@ -143,7 +143,7 @@ const Projects = () => {
           title="React Portfolio"
           des="Technology: React.js, Tailwind"
           src={project20}
-          github_link=""
+          github_link="https://github.com/atokic/ReactJS_portfolio/"
           site_link="https://atokic.netlify.app/"   
         />
         <ProjectsCard
@@ -153,10 +153,10 @@ const Projects = () => {
           github_link="https://github.com/atokic/MERN-Booking-App"
         />
         <ProjectsCard
-          title="React Portfolio"
+          title="React SaSSPortfolio"
           des="Technology: React.js"
           src={project9}
-          github_link="https://github.com/atokic/ReactJS_portfolio"   
+          github_link="https://github.com/atokic/ReactJS-SaSS-Portfolio"   
           site_link="https://portfolio-ante.netlify.app/"
         />
         <ProjectsCard
