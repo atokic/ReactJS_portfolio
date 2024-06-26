@@ -153,7 +153,7 @@ const Projects = () => {
           github_link="https://github.com/atokic/MERN-Booking-App"
         />
         <ProjectsCard
-          title="React SaSSPortfolio"
+          title="React SaSS Portfolio"
           des="Technology: React.js"
           src={project9}
           github_link="https://github.com/atokic/ReactJS-SaSS-Portfolio"   
