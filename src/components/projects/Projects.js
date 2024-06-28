@@ -37,7 +37,8 @@ import {
   project34,
   project35,
   project36,
-  project37
+  project37,
+  project38
 } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
@@ -268,7 +269,7 @@ const Projects = () => {
           site_link="https://advanced-state-management-react.netlify.app/" 
         /> 
         <ProjectsCard
-          title="React Place Picker"
+          title="React Place Picker With Local Storage"
           des="Technology: React.js"
           src={project31}
           github_link="https://github.com/atokic/Place-Picker"
@@ -294,7 +295,13 @@ const Projects = () => {
           src={project34}
           github_link="https://github.com/atokic/React-Class-based-Components"
           site_link="https://react-class-based-components-example.netlify.app/" 
-        />                                                                               
+        />
+        <ProjectsCard
+          title="React Place Picker With Backend"
+          des="Technology: React.js"
+          src={project38}
+          github_link="https://github.com/atokic/Place-Picker-With-Backend"
+        />                                                                              
       </div>
     </section>
   );

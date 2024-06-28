@@ -37,6 +37,7 @@ import project34 from "./images/projects/34.jpg";
 import project35 from "./images/projects/35.jpg";
 import project36 from "./images/projects/36.jpg";
 import project37 from "./images/projects/37.jpg";
+import project38 from "./images/projects/38.jpg";
 import testimonial1 from "./images/testimonial/testimonial1.png";
 import testimonial2 from "./images/testimonial/testimonial2.png";
 import testimonial3 from "./images/testimonial/testimonial3.png";
@@ -86,6 +87,7 @@ export {
   project35,
   project36,
   project37,
+  project38,
   quote,
   contactImg,
   testimonial1,
