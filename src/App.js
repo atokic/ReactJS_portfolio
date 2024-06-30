@@ -26,8 +26,8 @@ function App() {
           <Contact />
           <Footer />
           <FooterBottom />
-          <SpeedInsights />
         </div>
+          <SpeedInsights />
     </div>
   );
 }
