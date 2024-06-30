@@ -10,8 +10,6 @@ import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Testimonial from "./components/testimonial/Testimonial";
 
-import { SpeedInsights } from "@vercel/speed-insights/react";
-
 function App() {
   return (
     <div className="w-full h-auto bg-bodyColor text-lightText px-4">
@@ -27,7 +25,6 @@ function App() {
           <Footer />
           <FooterBottom />
         </div>
-        <SpeedInsights />
     </div>
   );
 }
