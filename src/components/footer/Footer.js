@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub} from "react-icons/fa";
 import {logo} from "../../assets/index"
 import { Link } from "react-scroll";
 
@@ -17,6 +17,9 @@ const Footer = () => {
           </a>
           <a className="bannerIcon" href="https://www.linkedin.com/in/ante-tokic/">
             <FaLinkedinIn />
+          </a>
+          <a className="bannerIcon" href="https://github.com/atokic">
+            <FaGithub />
           </a>
         </div>
       </div>
@@ -89,6 +92,12 @@ const Footer = () => {
           <li>
             <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
             <a href="https://www.netlify.com/">Netlify</a>
+              <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
+            </span>
+          </li>
+          <li>
+            <span className="w-full text-lg relative hover:text-designColor duration-300 group cursor-pointer">
+            <a href="https://vercel.com/">Vercel</a>
               <span className="w-full h-[1px] bg-designColor inline-flex absolute left-0 -bottom-1 -translate-x-[100%] group-hover:translate-x-0 transition-transform duration-300"></span>
             </span>
           </li>

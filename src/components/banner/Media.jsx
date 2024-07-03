@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaReact, FaAngular } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub, FaReact, FaAngular } from "react-icons/fa";
 import { SiAdobephotoshop, SiAdobeillustrator, SiAdobexd } from "react-icons/si";
 const Media = () => {
   return (
@@ -17,6 +17,9 @@ const Media = () => {
           </a>
           <a className="bannerIcon" href="https://www.linkedin.com/in/ante-tokic/">
             <FaLinkedinIn />
+          </a>
+          <a className="bannerIcon" href="https://github.com/atokic">
+            <FaGithub />
           </a>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { contactImg } from "../../assets/index";
 
 const ContactLeft = () => {
@@ -13,7 +13,7 @@ const ContactLeft = () => {
       <div className="flex flex-col gap-4">
         <h3 className="text-3xl font-bold text-white">Ante Tokić</h3>
         <p className="text-lg font-normal text-gray-400">
-          MERN Stack Developer
+          Web Developer
         </p>
         <p className="text-base text-gray-400 tracking-wide">
         I have recently completed my Master’s in computer science at FESB in Split
@@ -41,6 +41,9 @@ const ContactLeft = () => {
           </a>
           <a className="bannerIcon" href="https://www.linkedin.com/in/ante-tokic/">
             <FaLinkedinIn />
+          </a>
+          <a className="bannerIcon" href="https://github.com/atokic">
+            <FaGithub />
           </a>
         </div>
       </div>
