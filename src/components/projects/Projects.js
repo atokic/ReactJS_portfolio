@@ -40,7 +40,8 @@ import {
   project37,
   project38,
   project39,
-  project40
+  project40,
+  project41
 } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
@@ -316,7 +317,13 @@ const Projects = () => {
           src={project40}
           github_link="https://github.com/atokic/React-Forms"
           site_link="https://react-forms-inputs.netlify.app/"
-        />                                                                                 
+        />   
+        <ProjectsCard
+          title="React Food Order App"
+          des="Technology: React"
+          src={project41}
+          github_link="https://github.com/atokic/React-Food-Order-App"
+        />                                                                               
       </div>
     </section>
   );

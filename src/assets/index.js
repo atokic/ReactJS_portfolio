@@ -40,6 +40,7 @@ import project37 from "./images/projects/37.jpg";
 import project38 from "./images/projects/38.jpg";
 import project39 from "./images/projects/39.jpg";
 import project40 from "./images/projects/40.jpg";
+import project41 from "./images/projects/41.jpg";
 import testimonial1 from "./images/testimonial/testimonial1.png";
 import testimonial2 from "./images/testimonial/testimonial2.png";
 import testimonial3 from "./images/testimonial/testimonial3.png";
@@ -92,6 +93,7 @@ export {
   project38,
   project39,
   project40,
+  project41,
   quote,
   contactImg,
   testimonial1,
