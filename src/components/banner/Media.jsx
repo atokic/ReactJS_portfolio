@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebookF, FaWhatsapp, FaLinkedinIn, FaGithub, FaReact, FaAngular } from "react-icons/fa";
+import { FaWhatsapp, FaLinkedinIn, FaGithub, FaReact, FaAngular } from "react-icons/fa";
 import { SiAdobephotoshop, SiAdobeillustrator, SiAdobexd } from "react-icons/si";
 const Media = () => {
   return (
@@ -11,9 +11,6 @@ const Media = () => {
           <div className="flex gap-4">
           <a className="bannerIcon" href="https://wa.me/+385955749860">
             <FaWhatsapp />
-          </a>
-          <a className="bannerIcon" href="https://www.facebook.com/ante.tokicc/">
-            <FaFacebookF />
           </a>
           <a className="bannerIcon" href="https://www.linkedin.com/in/ante-tokic/">
             <FaLinkedinIn />
