@@ -41,7 +41,8 @@ import {
   project38,
   project39,
   project40,
-  project41
+  project41,
+  project42
 } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
@@ -323,7 +324,14 @@ const Projects = () => {
           des="Technology: React"
           src={project41}
           github_link="https://github.com/atokic/React-Food-Order-App"
-        />                                                                               
+        />
+        <ProjectsCard
+          title="React Redux Basics"
+          des="Technology: React"
+          src={project42}
+          github_link="https://github.com/atokic/React-Redux-Basics"
+          site_link="https://react-redux-basics.netlify.app/"
+        />                                                                              
       </div>
     </section>
   );
