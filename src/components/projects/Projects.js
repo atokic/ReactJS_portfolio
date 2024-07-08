@@ -42,7 +42,8 @@ import {
   project39,
   project40,
   project41,
-  project42
+  project42,
+  project43
 } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
@@ -331,7 +332,14 @@ const Projects = () => {
           src={project42}
           github_link="https://github.com/atokic/React-Redux-Basics"
           site_link="https://react-redux-basics.netlify.app/"
-        />                                                                              
+        />
+        <ProjectsCard
+          title="React Advanced Redux"
+          des="Technology: React"
+          src={project43}
+          github_link="https://github.com/atokic/React-Advanced-Redux"
+          site_link="https://react-advanced-redux.netlify.app/"
+        />                                                                               
       </div>
     </section>
   );
