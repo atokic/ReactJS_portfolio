@@ -21,18 +21,15 @@ const Projects = () => {
         <Title title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK" des="My Projects" />
       </div>
       <div>
-        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 mb-10">
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mb-10">
           <li onClick={() => handleClick("all")} className={`resumeLi ${activeCategory === "all" ? "border-designColor rounded-lg" : "border-transparent"}`}>
             All Projects
           </li>
           <li onClick={() => handleClick("development")} className={`resumeLi ${activeCategory === "development" ? "border-designColor rounded-lg" : "border-transparent"}`}>
-            Software / Web
+            Software / Web development
           </li>
           <li onClick={() => handleClick("webDesign")} className={`resumeLi ${activeCategory === "webDesign" ? "border-designColor rounded-lg" : "border-transparent"}`}>
             Web Design
-          </li>
-          <li onClick={() => handleClick("socialMediaManagement")} className={`resumeLi ${activeCategory === "socialMediaManagement" ? "border-designColor rounded-lg" : "border-transparent"}`}>
-            Social Media Management
           </li>
           <li onClick={() => handleClick("graphicDesign")} className={`resumeLi ${activeCategory === "graphicDesign" ? "border-designColor rounded-lg" : "border-transparent"}`}>
             Graphic Design
