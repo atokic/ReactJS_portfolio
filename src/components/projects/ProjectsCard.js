@@ -9,7 +9,7 @@ const ProjectsCard = ({ title, des, src, github_link, site_link }) => {
         <img
           className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
           src={src}
-          alt="src"
+          alt={title}
         />
       </div>
       <div className="w-full mt-5 flex flex-col  gap-6">
@@ -19,12 +19,16 @@ const ProjectsCard = ({ title, des, src, github_link, site_link }) => {
               {title}
             </h3>
             <div className="flex gap-2">
-              <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-              <a href={github_link}><BsGithub /></a>
-              </span>
-              <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-              <a href={site_link}><FaGlobe /></a>
-              </span>
+              {github_link && (
+                <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
+                  <a href={github_link}><BsGithub /></a>
+                </span>
+              )}
+              {site_link && (
+                <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
+                  <a href={site_link}><FaGlobe /></a>
+                </span>
+              )}
             </div>
           </div>
           <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
@@ -36,4 +40,4 @@ const ProjectsCard = ({ title, des, src, github_link, site_link }) => {
   );
 }
 
-export default ProjectsCard
+export default ProjectsCard;
