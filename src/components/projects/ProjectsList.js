@@ -44,14 +44,16 @@ import {
     project43,
     project44,
     project45,
-    project46,
-    project47,
-    project48,
-    project49,
-    project50,
-    project51,
-    project52,
-    project53
+    project401,
+    project402,
+    project403,
+    project404,
+    project405,
+    project406,
+    project407,
+    project408,
+    project409,
+    project410
   } from "../../assets/index";
   
   const projects = [
@@ -403,17 +405,25 @@ import {
       category: "development",
     },
     {
-      title: "Caffe bar Džokej Story/Post",
-      des: "Technology: Photoshop",
+      title: "React Routing Basics",
+      des: "Technology: React",
       src: project44,
-      github_link: "",
-      site_link: "https://www.instagram.com/caffe_bar_dzokej/",
-      category: "graphicDesign",
+      github_link: "https://github.com/atokic/React-Routing-Basics",
+      site_link: "https://react-routing-basics.netlify.app/",
+      category: "development",
     },
     {
-      title: "Caffe bar Džokej Story/Post",
-      des: "Technology: Photoshop",
+      title: "React Advanced Routing",
+      des: "Technology: React",
       src: project45,
+      github_link: "https://github.com/atokic/React-Advanced-Routing-App",
+      site_link: "",
+      category: "development",
+    },
+    {
+      title: "Caffe bar Džokej Story/Post",
+      des: "Technology: Photoshop",
+      src: project401,
       github_link: "",
       site_link: "https://www.instagram.com/caffe_bar_dzokej/",
       category: "graphicDesign",
@@ -421,7 +431,7 @@ import {
     {
       title: "Caffe bar Džokej Story/Post",
       des: "Technology: Photoshop",
-      src: project46,
+      src: project402,
       github_link: "",
       site_link: "https://www.instagram.com/caffe_bar_dzokej/",
       category: "graphicDesign",
@@ -429,7 +439,7 @@ import {
     {
       title: "Caffe bar Džokej Story/Post",
       des: "Technology: Photoshop",
-      src: project47,
+      src: project403,
       github_link: "",
       site_link: "https://www.instagram.com/caffe_bar_dzokej/",
       category: "graphicDesign",
@@ -437,7 +447,15 @@ import {
     {
       title: "Caffe bar Džokej Story/Post",
       des: "Technology: Photoshop",
-      src: project48,
+      src: project404,
+      github_link: "",
+      site_link: "https://www.instagram.com/caffe_bar_dzokej/",
+      category: "graphicDesign",
+    },
+    {
+      title: "Caffe bar Džokej Story/Post",
+      des: "Technology: Photoshop",
+      src: project405,
       github_link: "",
       site_link: "https://www.instagram.com/caffe_bar_dzokej/",
       category: "graphicDesign",
@@ -445,7 +463,7 @@ import {
     {
       title: "Ragbi Klub Sinj Story/Post",
       des: "Technology: Photoshop",
-      src: project49,
+      src: project406,
       github_link: "",
       site_link: "https://www.facebook.com/p/Ragbi-Klub-Sinj-100057331253471/?locale=hr_HR",
       category: "graphicDesign",
@@ -453,7 +471,7 @@ import {
     {
       title: "Ragbi Klub Sinj Story/Post",
       des: "Technology: Photoshop",
-      src: project50,
+      src: project407,
       github_link: "",
       site_link: "https://www.facebook.com/p/Ragbi-Klub-Sinj-100057331253471/?locale=hr_HR",
       category: "graphicDesign",
@@ -461,7 +479,7 @@ import {
     {
       title: "Estetika dekorativni kamen Story/Post",
       des: "Technology: Photoshop",
-      src: project51,
+      src: project408,
       github_link: "",
       site_link: "https://www.facebook.com/estetika.dek.kamen",
       category: "graphicDesign",
@@ -469,7 +487,7 @@ import {
     {
       title: "Ragbi Klub Sinj Story/Post",
       des: "Technology: Photoshop",
-      src: project52,
+      src: project409,
       github_link: "",
       site_link: "https://www.facebook.com/p/Ragbi-Klub-Sinj-100057331253471/?locale=hr_HR",
       category: "graphicDesign",
@@ -477,7 +495,7 @@ import {
     {
       title: "Estetika dekorativni kamen Story/Post",
       des: "Technology: Photoshop",
-      src: project53,
+      src: project410,
       github_link: "",
       site_link: "https://www.facebook.com/estetika.dek.kamen",
       category: "graphicDesign",

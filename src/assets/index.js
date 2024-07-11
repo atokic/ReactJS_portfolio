@@ -45,14 +45,16 @@ import project42 from "./images/projects/42.jpg";
 import project43 from "./images/projects/43.jpg";
 import project44 from "./images/projects/44.jpg";
 import project45 from "./images/projects/45.jpg";
-import project46 from "./images/projects/46.jpg";
-import project47 from "./images/projects/47.jpg";
-import project48 from "./images/projects/48.jpg";
-import project49 from "./images/projects/49.jpg";
-import project50 from "./images/projects/50.jpg";
-import project51 from "./images/projects/51.jpg";
-import project52 from "./images/projects/52.jpg";
-import project53 from "./images/projects/53.jpg";
+import project401 from "./images/projects/401.jpg";
+import project402 from "./images/projects/402.jpg";
+import project403 from "./images/projects/403.jpg";
+import project404 from "./images/projects/404.jpg";
+import project405 from "./images/projects/405.jpg";
+import project406 from "./images/projects/406.jpg";
+import project407 from "./images/projects/407.jpg";
+import project408 from "./images/projects/408.jpg";
+import project409 from "./images/projects/409.jpg";
+import project410 from "./images/projects/410.jpg";
 import testimonial1 from "./images/testimonial/testimonial1.png";
 import testimonial2 from "./images/testimonial/testimonial2.png";
 import testimonial3 from "./images/testimonial/testimonial3.png";
@@ -110,14 +112,16 @@ export {
   project43,
   project44,
   project45,
-  project46,
-  project47,
-  project48, 
-  project49,
-  project50,
-  project51,
-  project52,
-  project53,
+  project401,
+  project402,
+  project403,
+  project404,
+  project405,
+  project406,
+  project407,
+  project408,
+  project409,
+  project410,
   quote,
   contactImg,
   testimonial1,
@@ -125,5 +129,5 @@ export {
   testimonial3,
   testimonial4,
   testimonial5,
-  testimonial6
+  testimonial6,
 };
