@@ -76,7 +76,6 @@ const Contact = () => {
         setSuccessMsg('');
       }
     } catch (error) {
-      console.error('Error sending the email:', error);
       setErrMsg('Failed to send the email. Please try again later.');
     }
   };
