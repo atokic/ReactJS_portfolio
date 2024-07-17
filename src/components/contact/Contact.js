@@ -16,22 +16,22 @@ const Contact = () => {
   const form = useRef();
   
   const sendEmail = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  emailjs.sendForm('service_fswbqje', 'template_6rgeghd', form.current, 'vbGd4CAq-7XETbrsz')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
-};
+    emailjs.sendForm('service_vx32e5x', 'template_6rgeghd', form.current, 'XwCBJVOhH3Xki2dHS')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   // ========== Email Sending here ==============
 
   // ========== Email Validation start here ==============
   const emailValidation = () => {
     return String(email)
-      .toLocaleLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+      .toLowerCase()
+      .match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
   };
   // ========== Email Validation end here ================
 
@@ -46,7 +46,7 @@ const Contact = () => {
     } else if (!emailValidation(email)) {
       setErrMsg("Give a valid Email!");
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg("Please give your Subject!");
     } else if (message === "") {
       setErrMsg("Message is required!");
     } else {
@@ -62,6 +62,7 @@ const Contact = () => {
       setMessage("");
     }
   };
+
   return (
     <section
       id="contact"
