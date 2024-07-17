@@ -1,7 +1,6 @@
 import React, {useState, useRef } from 'react'
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -11,55 +10,74 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
-
-  // ========== Email Sending here ==============
   const form = useRef();
-  
-  const sendEmail = (e) => {
+
+  const isValidEmail = (email) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const handleSend = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_vx32e5x', 'template_6rgeghd', form.current, 'XwCBJVOhH3Xki2dHS')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+    if (username === '') {
+      setErrMsg('Username is required!');
+      return;
+    }
+    if (phoneNumber === '') {
+      setErrMsg('Phone number is required!');
+      return;
+    }
+    if (email === '') {
+      setErrMsg('Please provide your email!');
+      return;
+    }
+    if (!isValidEmail(email)) {
+      setErrMsg('Please provide a valid email address!');
+      return;
+    }
+    if (subject === '') {
+      setErrMsg('Please provide a subject!');
+      return;
+    }
+    if (message === '') {
+      setErrMsg('Message is required!');
+      return;
+    }
+
+    try {
+      const formData = {
+        username,
+        phoneNumber,
+        email,
+        subject,
+        message,
+      };
+
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-  };
-  // ========== Email Sending here ==============
 
-  // ========== Email Validation start here ==============
-  const emailValidation = () => {
-    return String(email)
-      .toLowerCase()
-      .match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
-  };
-  // ========== Email Validation end here ================
-
-  const handleSend = (e) => {
-    e.preventDefault();
-    if (username === "") {
-      setErrMsg("Username is required!");
-    } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
-    } else if (email === "") {
-      setErrMsg("Please give your Email!");
-    } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
-    } else if (subject === "") {
-      setErrMsg("Please give your Subject!");
-    } else if (message === "") {
-      setErrMsg("Message is required!");
-    } else {
-      sendEmail(e);
-      setSuccessMsg(
-        `Thank you dear ${username}, your messages has been sent successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      const data = await response.json();
+      if (response.ok) {
+        setSuccessMsg(data.message);
+        setErrMsg('');
+        setUsername('');
+        setPhoneNumber('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+        form.current.reset();
+      } else {
+        setErrMsg(data.error || 'Failed to send the email.');
+        setSuccessMsg('');
+      }
+    } catch (error) {
+      console.error('Error sending the email:', error);
+      setErrMsg('Failed to send the email. Please try again later.');
     }
   };
 
