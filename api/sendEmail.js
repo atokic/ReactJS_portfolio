@@ -1,15 +1,23 @@
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
+  if (req.method === "POST") {
     const { username, phoneNumber, email, subject, message } = req.body;
 
     // Create a transporter
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
+      port: 465,
+      secure: true,
+      logger: true,
+      debug: true,
+      secureConnection: false,
       auth: {
         user: process.env.EMAIL_USER, // Use environment variables
         pass: process.env.EMAIL_PASS,
+      },
+      tls: { 
+        rejectUnauthorized: true 
       },
     });
 
@@ -22,13 +30,13 @@ export default async function handler(req, res) {
 
     try {
       const info = await transporter.sendMail(mailOptions);
-      console.log('Email sent:', info.response);
-      res.status(200).json({ message: 'Email sent: ' + info.response });
+      console.log("Email sent:", info.response);
+      res.status(200).json({ message: "Email sent: " + info.response });
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error sending email:", error);
       res.status(500).json({ error: error.toString() });
     }
   } else {
-    res.status(405).json({ message: 'Only POST requests are allowed' });
+    res.status(405).json({ message: "Only POST requests are allowed" });
   }
 }
