@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     const mailOptions = {
         from: email,
         to: process.env.RECIPIENT_EMAIL,
-        subject: `${subject} - from ${username}`,
+        subject: `Contact Form atokic.com - ${subject} - from ${username}`,
         html: `
           <html>
             <head>
