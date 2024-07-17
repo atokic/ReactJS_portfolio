@@ -39,7 +39,7 @@ const Contact = () => {
       setErrMsg('Please provide a subject!');
       return;
     }
-    if (message === '') {
+    if (message.trim() === '') {
       setErrMsg('Message is required!');
       return;
     }
