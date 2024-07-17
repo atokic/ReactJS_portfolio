@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     const mailOptions = {
         from: email,
         to: process.env.RECIPIENT_EMAIL,
-        subject: `Contact Form atokic.com - ${subject} - from ${username}`,
+        subject: `Contact Form atokic.com: ${subject} - from ${username}`,
         html: `
           <html>
             <head>
@@ -49,14 +49,16 @@ export default async function handler(req, res) {
             <body>
               <div class="email-content">
                 <p><strong>Name:</strong> ${username}</p>
-                <p><strong>Phone:</strong> ${phoneNumber}</p>
+                <p><strong>E-mail:</strong> ${email}</p>
+                <p><strong>Phone number:</strong> ${phoneNumber}</p>
                 <p><strong>Subject:</strong> ${subject}</p>
-                <p>${message}</p>
+                <p><strong>Message:</strong> ${message}</p>
               </div>
               <p class="signature">Sent from my personal website atokic.com!</p>
             </body>
           </html>
         `,
+        replyTo: email,
       };
 
     try {
