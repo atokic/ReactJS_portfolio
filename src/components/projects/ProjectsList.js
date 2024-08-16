@@ -44,6 +44,7 @@ import {
     project43,
     project44,
     project45,
+    project46,
     project401,
     project402,
     project403,
@@ -57,6 +58,15 @@ import {
   } from "../../assets/index";
   
   const projects = [
+    {
+      title: "Car Marketplace App",
+      des: "Technology: MEAN (MongoDB, Express, Angular, Node.js)",
+      src: project46,
+      github_link:
+        "https://github.com/atokic/MEAN-Car-Marketplace-App",
+      site_link: "",
+      category: "development",
+    },
     {
       title: "Dynamic video stream",
       des: "Technology: Node.js",

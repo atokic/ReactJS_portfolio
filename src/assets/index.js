@@ -45,6 +45,7 @@ import project42 from "./images/projects/42.jpg";
 import project43 from "./images/projects/43.jpg";
 import project44 from "./images/projects/44.jpg";
 import project45 from "./images/projects/45.jpg";
+import project46 from "./images/projects/46.jpg";
 import project401 from "./images/projects/401.jpg";
 import project402 from "./images/projects/402.jpg";
 import project403 from "./images/projects/403.jpg";
@@ -112,6 +113,7 @@ export {
   project43,
   project44,
   project45,
+  project46,
   project401,
   project402,
   project403,
